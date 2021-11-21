@@ -1,10 +1,8 @@
-import React from 'react'
+import React from "react";
 
-const Button = ({props}:any) => {
-    console.log(props)
-    return (
-        <button>hello</button>
-    )
-}
+const Button = (props: any) => {
+  const { text } = props;
+  return <button className="btn mt-2">{text}</button>;
+};
 
-export default Button
+export default Button;

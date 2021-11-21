@@ -12,14 +12,17 @@ span {
 }
 
 h1 {
-  font-size: 25px;
-  font-weight: 700;
+  font-size: 24px;
+  font-weight: 400;
   text-transform: uppercase;
   text-align: center;
-  color: $blue-light;
 }
 
 h2 {
+  font-size: 14px;
+  font-weight: 300;
+
+  text-transform: capitalize;
 }
 
 h3 {
@@ -27,7 +30,6 @@ h3 {
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
-  color: $blue-light;
 }
 
 h4 {

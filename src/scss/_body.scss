@@ -1,8 +1,19 @@
 body {
-    background-color: $black;
-    font-family: 'Roboto', sans-serif;
-    display: flex;
-    justify-content: center;
-    max-width: 2440px;
-    margin: auto;
+  background-color: $black;
+  font-family: "Roboto Mono", monospace;
+  display: flex;
+  justify-content: center;
+  max-width: 2440px;
+  margin: auto;
+
+  color: $blue-light;
+  background-color: $black;
+  @include btn($blue-light, $black);
+  transition: all .5s;
+}
+
+body.test {
+  background-color: #ffec88;
+  color: #416f72;
+  @include btn(#416f72, #ffec88);
 }
