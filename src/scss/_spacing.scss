@@ -1,0 +1,35 @@
+.margin-bottom {
+    margin-bottom: 10px;
+}
+
+.flex {
+    display: flex;
+}
+
+.no-wrap {
+flex-wrap: nowrap;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.justify-space-around {
+    justify-content: space-around;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.column {
+    flex-direction: column;
+}
