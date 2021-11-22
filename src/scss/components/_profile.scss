@@ -1,0 +1,6 @@
+@mixin backgroundText($bcgColor, $text) {
+  .backgroundText {
+    background-color: $bcgColor;
+    color: $text;
+  }
+}

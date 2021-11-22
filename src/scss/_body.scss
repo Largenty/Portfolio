@@ -4,6 +4,7 @@
     background-color: $bcg;
     color: $text;
     @include btn($text, $bcg);
+    @include backgroundText($text, $bcg);
   }
 }
 
@@ -16,6 +17,7 @@ body {
   max-width: 2440px;
   margin: auto;
   @include theme(#343639, #bcdfd5, "dark");
+  @include backgroundText(#bcdfd5, #343639);
   transition: all 0.5s;
 }
 
