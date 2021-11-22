@@ -27,22 +27,22 @@ const Theme = () => {
     <div
       style={{
         position: "absolute",
-        bottom: 50,
+        bottom: "20px",
         right: 0,
         display: "flex",
         flexDirection: "column",
       }}
     >
-      {themeArrayForButton.map((color: any, key: number) => {
+      {themeArrayForButton.map((item: any, key: number) => {
         return (
           <button
             key={key}
-            onClick={() => handleChange(color.theme)}
+            onClick={() => handleChange(item.theme)}
             style={{
               padding: "10px",
-              margin: "5px",
+              margin: "6px 20px",
               borderRadius: "50%",
-              backgroundColor: color.color,
+              backgroundColor: item.color,
               border: "none",
               cursor: "pointer",
             }}
