@@ -1,6 +1,5 @@
 @mixin theme($bcg, $text, $class) {
   body.#{$class} {
-    display: block;
     background-color: $bcg;
     color: $text;
     @include btn($text, $bcg);
@@ -8,7 +7,6 @@
 }
 
 body {
-  display: none;
   background-color: $black;
   font-family: "Roboto Mono", monospace;
   display: flex;
