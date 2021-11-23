@@ -11,7 +11,7 @@ const Profile = () => {
         className="flex justify-center align-center column"
         style={{ height: "100vh", margin: "auto" }}
       >
-        <div style={{ maxWidth: "70%", margin: "auto" }}>
+        <div className="maxWidth" style={{ maxWidth: "70%", margin: "auto" }}>
           <div>
             <h3>Hi, i'm</h3>
             <h1
@@ -38,7 +38,7 @@ const Profile = () => {
             games.
           </p>
 
-          <div className="flex justify-center" style={{ margin: "20px" }}>
+          <div className="flex justify-center mediaButton" style={{ margin: "20px" }}>
             <div style={{ margin: "0 20px" }}>
               <Button {...linkedInLink} />
             </div>

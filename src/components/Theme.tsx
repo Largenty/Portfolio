@@ -39,13 +39,9 @@ const Theme = () => {
           <button
             key={key}
             onClick={() => handleChange(item.theme)}
+            className="theme"
             style={{
-              padding: "10px",
-              margin: "6px 20px",
-              borderRadius: "50%",
               backgroundColor: item.color,
-              border: "none",
-              cursor: "pointer",
             }}
           ></button>
         );
