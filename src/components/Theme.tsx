@@ -27,7 +27,7 @@ const Theme = () => {
   return (
     <div
       style={{
-        position: "absolute",
+        position: "fixed",
         bottom: "20px",
         right: 0,
         display: "flex",

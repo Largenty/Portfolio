@@ -1,10 +1,11 @@
-@mixin theme($bcg, $text, $class) {
+@mixin theme($bcg, $text, $class, $bcgColorTransp) {
   body.#{$class} {
     display: block;
     background-color: $bcg;
     color: $text;
     @include btn($text, $bcg);
     @include backgroundText($text, $bcg);
+    @include card($text, $bcgColorTransp);
   }
 }
 
@@ -16,18 +17,40 @@ body {
   justify-content: center;
   max-width: 2440px;
   margin: auto;
-  @include theme(#343639, #bcdfd5, "dark");
+  @include theme(#343639, #bcdfd5, "dark", #34363975);
   @include backgroundText(#bcdfd5, #343639);
   transition: all 0.5s;
+  /* unvisited link */
+  a:link {
+    color: none;
+    text-decoration: none;
+  }
+
+  /* visited link */
+  a:visited {
+    color: none;
+    text-decoration: none;
+  }
+
+  /* mouse over link */
+  a:hover {
+    color: none;
+    text-decoration: none;
+  }
+
+  /* selected link */
+  a:active {
+    color: none;
+    text-decoration: none;
+  }
 }
 
-@include theme(#fffdf5, #6f6f6f, "white");
-@include theme(#ffec88, #416f72, "yellow");
-@include theme(#b0e1a3, #7c5664, "green");
-@include theme(#376590, #c8ffbb, "blue");
-@include theme(#ff5a5a, #ffc9ed, "red");
-@include theme(#343639, #bcdfd5, "dark");
-
+@include theme(#fffdf5, #6f6f6f, "white", #fffdf5c7);
+@include theme(#ffec88, #416f72, "yellow", #ffeb88c7);
+@include theme(#b0e1a3, #7c5664, "green", #b0e1a3c6);
+@include theme(#376590, #c8ffbb, "blue", #376590c6);
+@include theme(#ff5a5a, #ffc9ed, "red", #ff5a5ac7);
+@include theme(#343639, #bcdfd5, "dark", #343639c7);
 
 // body.yellow {
 //   background-color: #ffec88;
