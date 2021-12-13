@@ -6,9 +6,12 @@ type BtnData = {
 
 const Button = (props: BtnData) => {
   const { text, link } = props;
+
   return (
     <Link to={link ?? ""}>
-      <button className="btn mt-2">{text}</button>
+      <button className="btn mt-2">
+        {text}
+      </button>
     </Link>
   );
 };
