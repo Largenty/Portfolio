@@ -81,8 +81,8 @@ const Work = () => {
             margin: "0px 20px",
           }}
         >
-          {data.map((element: WorkingData) => (
-            <WorkingCard {...element} />
+          {data.map((element: WorkingData, key: number) => (
+            <WorkingCard key={key} {...element} />
           ))}
         </div>
       </div>

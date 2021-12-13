@@ -10,7 +10,12 @@ const WorkingCard = (props: WorkingData) => {
   const { enterprise, description, tech, link, image } = props;
 
   return (
-    <a href={link} target="_blank" style={{ textDecoration: "none" }}>
+    <a
+      href={link}
+      target="_blank"
+      rel="noreferrer"
+      style={{ textDecoration: "none" }}
+    >
       <div className="card" style={{ backgroundImage: `url("${image}")` }}>
         <div className="card-description">
           <div

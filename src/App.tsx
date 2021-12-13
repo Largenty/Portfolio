@@ -8,6 +8,7 @@ import Theme from "./components/Theme";
 import Side from "./components/Side";
 import Work from "./pages/Work";
 import HomeLink from "./components/HomeLink";
+import Skills from "./pages/Skills";
 
 function App() {
   const [theme, setTheme] = React.useState<String>("dark");
@@ -18,6 +19,7 @@ function App() {
         <Routes>
           <Route path="/workspace" element={<Work />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/skills" element={<Skills />} />
           <Route path="/" element={<Home />} />
         </Routes>
         <Theme />

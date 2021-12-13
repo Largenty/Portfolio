@@ -1,0 +1,38 @@
+@mixin bar($color, $bcgColorTrans) {
+  .firstBar {
+    width: 100%;
+    height: 15px;
+    background-color: $color;
+    position: relative;
+    animation: progress-animation 1.5s linear;
+  }
+
+  .secondBar {
+    width: 100%;
+    height: 10px;
+    background-color: $bcgColorTrans;
+    position: absolute;
+    bottom: -3px;
+    margin-left: 5px;
+    border: 1px solid $color;
+    animation: progress-animation 1.5s linear;
+  }
+
+  @keyframes progress-animation {
+    0% {
+      width: 0%;
+    }
+    25% {
+      width: 50%;
+    }
+    50% {
+      width: 75%;
+    }
+    75% {
+      width: 85%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+}

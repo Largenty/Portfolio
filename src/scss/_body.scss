@@ -6,6 +6,7 @@
     @include btn($text, $bcg);
     @include backgroundText($text, $bcg);
     @include card($text, $bcgColorTransp);
+    @include bar($text, $bcgColorTransp);
   }
 }
 
