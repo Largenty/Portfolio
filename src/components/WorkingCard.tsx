@@ -1,10 +1,4 @@
-type WorkingData = {
-  enterprise: string;
-  description: string;
-  tech: string;
-  link: string;
-  image: string;
-};
+import { WorkingData } from "../types/types";
 
 const WorkingCard = (props: WorkingData) => {
   const { enterprise, description, tech, link, image } = props;

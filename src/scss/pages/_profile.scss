@@ -1,0 +1,13 @@
+.profile {
+  &-title {
+    font-size: 48px;
+    text-align: inherit;
+    display: inline;
+  }
+
+  &-p {
+    margin-top: 20px;
+    font-size: 12px;
+    text-align: justify;
+  }
+}

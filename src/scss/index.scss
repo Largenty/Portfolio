@@ -3,16 +3,19 @@
 @import "spacing";
 @import "background";
 
-// // Pages
-// @import "pages/home";
-
-// // Components
+// Components
+@import "components/bar";
 @import "components/button";
-@import "components/theme";
+@import "components/home-link";
 @import "components/profile";
 @import "components/side";
+@import "components/theme";
 @import "components/working-card";
-@import "components/bar";
+
+// pages
+@import "pages/profile";
+@import "pages/skills";
+@import "pages/work";
 
 @import "body";
 @import "media-queries";

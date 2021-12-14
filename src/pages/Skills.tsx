@@ -4,7 +4,6 @@ import { BtnLink } from "../types/types";
 import Bar from "../components/Bar";
 
 const Skills = () => {
-
   const lvlArrayName = [
     "hello World",
     "junior",
@@ -41,36 +40,17 @@ const Skills = () => {
   };
 
   return !isLoading ? (
-    <div><p>Loading...</p></div>
+    <div>
+      <p>Loading...</p>
+    </div>
   ) : (
     <React.Fragment>
-      <div
-        className="flex column"
-        style={{ height: "100vh", margin: "auto", width: "80%" }}
-      >
-        <h2
-          style={{
-            margin: "75px 20px 0 0px",
-            textTransform: "uppercase",
-            fontSize: "48px",
-          }}
-        >
-          Skills
-        </h2>
+      <div className="flex column width-80 margin-auto height">
+        <h2 className="skills-title">Skills</h2>
         <div>
-          <section
-            style={{
-              display: "flex",
-              flexWrap: "wrap",
-            }}
-          >
+          <section className="flex wrap">
             {data.btnSkills.map((element: BtnLink, key: number) => (
-              <div
-                style={{
-                  marginRight: "40px",
-                }}
-                key={key}
-              >
+              <div className="margin-right " key={key}>
                 <button
                   className="btn mt-2"
                   onClick={() => handleClick(element.text)}
@@ -81,15 +61,7 @@ const Skills = () => {
             ))}{" "}
           </section>
 
-          <section
-            style={{
-              display: "flex",
-              flexWrap: "wrap",
-              justifyContent: "space-between",
-              marginTop: "40px",
-              textTransform: "capitalize",
-            }}
-          >
+          <section className="flex wrap justify-space-between margin-top-40   text-transform-capitalize;">
             {(currentWidth < 560 ? lvlArrayNumber : lvlArrayName).map(
               (element: string, key: number) => (
                 <p key={key}>{element}</p>

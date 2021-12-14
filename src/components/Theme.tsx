@@ -1,6 +1,6 @@
 import React from "react";
 import * as data from "../data/data";
-import { Theme } from "../types/types";
+import { ThemeType } from "../types/types";
 import { ThemeContext } from "../contexts/themeContext";
 import { initThemeColor, setThemeColor } from "../helpers/theme";
 
@@ -11,23 +11,15 @@ const Theme = () => {
     const theme = localStorage.getItem("Theme");
     initThemeColor(theme ?? "dark");
   });
-  
+
   const handleChange = (color: string) => {
     const colorTheme = setThemeColor(color, theme);
     setTheme(colorTheme);
   };
 
   return (
-    <div
-      style={{
-        position: "fixed",
-        bottom: "20px",
-        right: 0,
-        display: "flex",
-        flexDirection: "column",
-      }}
-    >
-      {data.btnTheme.map((item: Theme, key: number) => {
+    <div className="theme-other">
+      {data.btnTheme.map((item: ThemeType, key: number) => {
         return (
           <button
             key={key}

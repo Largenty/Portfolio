@@ -6,25 +6,9 @@ import WorkingCard from "../components/WorkingCard";
 const Work = () => {
   return (
     <React.Fragment>
-      <div
-        className="flex column"
-        style={{ height: "100vh", margin: "auto", width: "100%" }}
-      >
-        <h2
-          style={{ margin: "75px 20px", textAlign: "center", fontSize: "48px" }}
-          className="backgroundText"
-        >
-          WORKSPACE
-        </h2>
-
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-around",
-            flexWrap: "wrap",
-            margin: "0px 20px",
-          }}
-        >
+      <div className="flex column height margin-auto full-width ">
+        <h2 className="backgroundText work-title">WORKSPACE</h2>
+        <div className="flex justify-space-around wrap margin-side-20">
           {data.lastJobData.map((element: WorkingData, key: number) => (
             <WorkingCard key={key} {...element} />
           ))}

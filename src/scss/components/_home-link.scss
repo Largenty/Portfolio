@@ -1,0 +1,14 @@
+.home-link {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+
+  &-title {
+      font-weight: 500;
+  }
+
+  &-p {
+      font-size: 12px;
+  }
+}

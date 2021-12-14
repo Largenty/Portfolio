@@ -1,7 +1,6 @@
-import { BtnLink, TechData, Theme, WorkingData } from "../types/types";
+import { BtnLink, TechData, ThemeType, WorkingData } from "../types/types";
 
 const btnProfile: BtnLink[] = [
-  { text: "CV", link: "/cv" },
   { text: "LinkedIn", link: "/linkedIn" },
   { text: "works", link: "/workspace" },
   { text: "skills", link: "/skills" },
@@ -13,7 +12,7 @@ const btnSkills: BtnLink[] = [
   { text: "other" },
 ];
 
-const btnTheme: Theme[] = [
+const btnTheme: ThemeType[] = [
   { theme: "dark", color: "#343639" },
   { theme: "red", color: "#ff5a5a" },
   { theme: "yellow", color: "#ffec88" },

@@ -1,11 +1,7 @@
 const Bar = (props: any) => {
   return (
-    <div
-      style={{
-        margin: "20px 0",
-      }}
-    >
-      <p style={{ textTransform: "capitalize" }}>{props.tech}</p>
+    <div className="margin-up-down-20 ">
+      <p className="text-transform-capitalize ">{props.tech}</p>
       <div
         style={{
           width: props.value + "%",

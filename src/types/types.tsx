@@ -16,7 +16,7 @@ export type WorkingData = {
     image: string;
 };
   
-export type Theme = {
+export type ThemeType = {
     theme: string;
     color: string;
 }

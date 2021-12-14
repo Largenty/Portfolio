@@ -3,24 +3,11 @@ const HomeLink = () => {
   const navigate = useNavigate();
 
   return (
-    <div
-      style={{
-        position: "absolute",
-        top: "20px",
-        left: "20px",
-        cursor: "pointer",
-      }}
-      onClick={() => navigate("/profile")}
-    >
-      <h4
-        style={{
-          textTransform: "uppercase",
-          fontWeight: "500",
-        }}
-      >
+    <div className="home-link" onClick={() => navigate("/profile")}>
+      <h4 className="text-transform-uppercase home-link-title">
         Ludovic Argenty
       </h4>
-      <p style={{ fontWeight: "300", fontSize: "12px" }}>Dev Full stack</p>
+      <p className="home-link-title home-link-p">Dev Full stack - HOME</p>
     </div>
   );
 };

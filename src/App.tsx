@@ -30,27 +30,6 @@ function App() {
         <Side
           {...{ text: "work", classSide: "sideLeft", link: "/workspace" }}
         />
-
-        {/* <hr
-          style={{
-            position: "absolute",
-            top: "33.3%%",
-            right: "-31%",
-            transform: "rotate(90deg)",
-            border: "1px solid black",
-            width: "75%",
-          }}
-        /> */}
-        {/* <hr
-          style={{
-            position: "absolute",
-            bottom: "33.3%",
-            left: "-31%",
-            transform: "rotate(90deg)",
-            border: "1px solid black",
-            width: "75%",
-          }}
-        /> */}
       </ThemeContext.Provider>
     </div>
   );
