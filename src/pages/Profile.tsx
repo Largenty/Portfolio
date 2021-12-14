@@ -1,18 +1,11 @@
 import React from "react";
+import * as data from "../data/data";
+import { BtnLink } from "../types/types";
 import Button from "../components/Button";
 
-type BtnData = {
-  text: string;
-  link: string;
-};
 
 const Profile = () => {
-  const btnData = [
-    { text: "CV", link: "/cv" },
-    { text: "LinkedIn", link: "/linkedIn" },
-    { text: "works", link: "/workspace" },
-    { text: "skills", link: "/skills" },
-  ];
+
   return (
     <React.Fragment>
       <div
@@ -50,9 +43,9 @@ const Profile = () => {
             className="flex justify-center mediaButton"
             style={{ margin: "20px" }}
           >
-            {btnData.map((element: BtnData, key: number) => (
+            {data.btnProfile.map((element: BtnLink, key: number) => (
               <div key={key} style={{ margin: "0 20px" }}>
-                <Button {...element} />{" "}
+                <Button {...element} />
               </div>
             ))}
           </div>

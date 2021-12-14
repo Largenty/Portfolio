@@ -1,10 +1,7 @@
 import { Link } from "react-router-dom";
-type BtnData = {
-  text: string;
-  link?: string;
-};
+import { BtnLink } from "../types/types";
 
-const Button = (props: BtnData) => {
+const Button = (props: BtnLink) => {
   const { text, link } = props;
 
   return (
