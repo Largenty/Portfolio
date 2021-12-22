@@ -6,8 +6,8 @@ import Button from "../components/Button";
 const Profile = () => {
   return (
     <React.Fragment>
-      <div className="flex justify-center align-center column height margin-auto">
-        <div className="maxWidth  margin-auto width-70">
+      <div className="flex justify-center align-center column height margin-auto autoMiddle">
+        <div className="maxWidth  margin-auto width-70  autoMiddle-margin">
           <div>
             <h3>Hi, i'm</h3>
             <h1 className="backgroundText profile-title">Ludovic Argenty</h1>

@@ -2,7 +2,6 @@ $angle: 8px;
 $angle-o: 4px;
 
 @mixin btn($color, $bcg-color) {
-    
   .btn {
     top: 0;
     left: 0;
@@ -12,12 +11,11 @@ $angle-o: 4px;
     padding: 10px 35px;
     background-color: $bcg-color;
     border: 1px solid $color;
-    font-size: 14px;
+    font-size: 1.3rem;
     cursor: pointer;
 
     text-transform: uppercase;
     color: $color;
-    font-family: arial;
     letter-spacing: 1px;
 
     box-shadow: 6px 6px 0 $color;

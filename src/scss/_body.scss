@@ -13,12 +13,12 @@
 body {
   display: none;
   background-color: $black;
-  font-family: "Roboto Mono", monospace;
+  font-family: "Poppins", sans-serif;
   display: flex;
   justify-content: center;
   max-width: 2440px;
   margin: auto;
-  @include theme(#343639, #bcdfd5, "dark", #34363975);
+  @include theme(#343639, #d3d3d3, "dark", #34363975);
   @include backgroundText(#bcdfd5, #343639);
   transition: all 0.5s;
   /* unvisited link */
@@ -47,11 +47,11 @@ body {
 }
 
 @include theme(#fffdf5, #6f6f6f, "white", #fffdf5c7);
-@include theme(#ffec88, #416f72, "yellow", #ffeb88c7);
-@include theme(#b0e1a3, #7c5664, "green", #b0e1a3c6);
+@include theme(#FDD068, #3a585a, "yellow", #fdd068a3);
+@include theme(#52B788, #0d6277, "green", #50a77e7e);
 @include theme(#376590, #c8ffbb, "blue", #376590c6);
-@include theme(#ff5a5a, #ffc9ed, "red", #ff5a5ac7);
-@include theme(#343639, #bcdfd5, "dark", #343639c7);
+@include theme(#ff5a5a, #6b1d51, "red", #ff5a5ac7);
+@include theme(#343639, #d3d3d3, "dark", #343639c7);
 
 // body.yellow {
 //   background-color: #ffec88;

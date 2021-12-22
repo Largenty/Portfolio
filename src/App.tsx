@@ -24,12 +24,12 @@ function App() {
         </Routes>
         <Theme />
         <HomeLink />
-        <Side
+        {/* <Side
           {...{ text: "skills", classSide: "sideRight", link: "/skills" }}
         />
         <Side
           {...{ text: "work", classSide: "sideLeft", link: "/workspace" }}
-        />
+        /> */}
       </ThemeContext.Provider>
     </div>
   );
