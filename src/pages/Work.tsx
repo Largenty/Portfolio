@@ -6,7 +6,7 @@ import WorkingCard from "../components/WorkingCard";
 const Work = () => {
   return (
     <React.Fragment>
-      <div className="flex column justify-center autoMiddle height margin-auto full-width ">
+      <div className="flex column  height margin-auto full-width autoMiddle">
         <h2
           className="backgroundText work-title"
           style={{ marginTop: "150px" }}

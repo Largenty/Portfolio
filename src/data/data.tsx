@@ -1,7 +1,8 @@
 import { BtnLink, TechData, ThemeType, WorkingData } from "../types/types";
 
 const btnProfile: BtnLink[] = [
-  { text: "LinkedIn", link: "/linkedIn" },
+  { text: "linkedin", link: "https://www.linkedin.com/in/ludovic-argenty/" },
+  { text: "github", link: "https://github.com/Largenty" },
   { text: "works", link: "/workspace" },
   { text: "skills", link: "/skills" },
 ];
@@ -46,30 +47,7 @@ const lastJobData: WorkingData[] = [
     image:
       "https://cdn.pixabay.com/photo/2016/10/20/18/35/earth-1756274__340.jpg",
   },
-  {
-    enterprise: "test",
-    description: "small description",
-    tech: "VueJs, nodeJs, etc ...",
-    link: "http///",
-    image:
-      "https://www.capital.fr/imgre/fit/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2Fcap.2F2020.2F10.2F14.2F84106a3d-6ec6-428a-82ff-0bda6147dc90.2Ejpeg/768x432/background-color/ffffff/quality/70/espace-la-france-va-t-elle-echouer-a-profiter-de-la-revolution-du-new-space-1383156.jpg",
-  },
-  {
-    enterprise: "test",
-    description: "small description",
-    tech: "VueJs, nodeJs, etc ...",
-    link: "http///",
-    image:
-      "https://www.rennes-business.com/uploads/sites/2/elementor/thumbs/iStock-1092964846-ohmc77w20o5x8bzxc8k15sf3rl5f9e17z5o6v4hf8w.jpg",
-  },
-  {
-    enterprise: "test",
-    description: "small description",
-    tech: "VueJs, nodeJs, etc ...",
-    link: "http///",
-    image:
-      "https://blogs.microsoft.com/wp-content/uploads/prod/2020/10/HERO-ART-microsoft_azure_1920x1000_nologo.jpg",
-  },
+
 ];
 
 const profileLink = { text: "enter", link: "/profile" };

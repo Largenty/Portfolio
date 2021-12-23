@@ -1,6 +1,6 @@
 @mixin card($color, $bcgColor) {
   .card {
-    width: 311px;
+    width: 500px;
     height: 416px;
     background-color: $bcgColor;
     border: 1px solid $color;
@@ -12,7 +12,7 @@
     cursor: pointer;
 
     &-description {
-      width: 311px;
+      width: 500px;
       background-color: $bcgColor;
       position: absolute;
       bottom: -10px;
@@ -20,7 +20,6 @@
       background-position: center;
       background-size: cover;
       margin: 10px 10px 0 10px;
-
     }
     &-text {
       color: $color !important;
