@@ -15,8 +15,7 @@ const Profile = () => {
           </div>
           <p className="profile-p">
             I really don’t know how to introduce myself correctly but you can
-            check my cv, my skills / work, my linkedIn or just play at some
-            games.
+            check my cv, my skills / work or my linkedIn.
           </p>
 
           <div className="flex justify-center mediaButton margin-20">
