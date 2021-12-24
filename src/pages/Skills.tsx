@@ -46,7 +46,7 @@ const Skills = () => {
   ) : (
       <React.Fragment>
 
-      <div className="flex column justify-center  width-80 margin-auto height autoMiddle" >
+      <div className="flex column  width-80 margin-auto height autoMiddle" >
         <h2 className="skills-title "  style={{ marginTop: "150px" }}>Skills</h2>
         <div>
           <section className="flex wrap">

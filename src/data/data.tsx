@@ -53,23 +53,32 @@ const lastJobData: WorkingData[] = [
 const profileLink = { text: "enter", link: "/profile" };
 
 const techBack: TechData[] = [
-  { tech: "grezg", value: 10 },
-  { tech: "grezg", value: 35 },
-  { tech: "fds", value: 51 },
-  { tech: "gfds", value: 41 },
+  { tech: "NodeJS", value: 45 },
+  { tech: "MongoDB", value: 42 },
+  { tech: "SQL", value: 25 },
+  { tech: "PosgreSQL", value: 33 },
+  { tech: "ExpressJS", value: 40 },
+  { tech: "Sequelize", value: 27 },
+  { tech: "Jest", value: 30 },
 ];
 
 const techFront: TechData[] = [
-  { tech: "html", value: 64 },
-  { tech: "css", value: 35 },
-  { tech: "reactJs", value: 51 },
+  { tech: "HTML5", value: 59 },
+  { tech: "CSS3 / SASS/SCSS", value: 40 },
+  { tech: "ReactJS", value: 46 },
+  { tech: "Redux", value: 32 },
   { tech: "VueJs", value: 41 },
+  { tech: "Vuetify", value: 35 },
+  { tech: "JavaScript", value: 52 },
+  { tech: "Jest", value: 20 },
+  { tech: "TailwindCSS", value: 34 },
+  { tech: "ReactHook", value: 37},
 ];
 
 const techOther: TechData[] = [
-  { tech: "bvcbvbvbcbb", value: 10 },
-  { tech: "bbvcbvc", value: 1 },
-  { tech: "bvcbvc", value: 1 },
+  { tech: "Netlify", value: 40 },
+  { tech: "Heroku", value: 40 },
+  { tech: "GoogleAPI", value: 35 },
   { tech: "vbcbbvcxbv", value: 1 },
 ];
 
