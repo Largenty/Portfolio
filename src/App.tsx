@@ -5,7 +5,6 @@ import "./scss/index.scss";
 import Home from "./pages/Home";
 import Profile from "./pages/Profile";
 import Theme from "./components/Theme";
-import Side from "./components/Side";
 import Work from "./pages/Work";
 import HomeLink from "./components/HomeLink";
 import Skills from "./pages/Skills";
