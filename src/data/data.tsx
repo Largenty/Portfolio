@@ -36,18 +36,17 @@ const lastJobData: WorkingData[] = [
     enterprise: "Ko'llectif prod",
     description: "Création d'un site vitrine pour kollectif production.",
     tech: "REACTJS, tailwinds, hooks, Netlify, etc ...",
-    link: "http///",
+    link: "https://www.kollectif-prod.com/",
     image: "https://zupimages.net/up/21/51/nkz0.png",
   },
   {
     enterprise: "Mytako",
-    description: "Création d’une plateforme de mise en relation entre les particuliers et les flottes de taxis à travers la france.",
+    description:
+      "Création d’une plateforme de mise en relation entre les particuliers et les flottes de taxis à travers la france.",
     tech: "VueJS, Vuetify, Adyen, NodeJS, Nodemailer, PostgreSQL, Sequelize, Heroku, Jest, Clis, Crons, Google, Tomtom, GoogleAnalytics, Segment, Nodemailer ...",
     link: "https://mytako.com",
-    image:
-      "https://zupimages.net/up/21/51/tay3.png",
+    image: "https://zupimages.net/up/21/51/tay3.png",
   },
-
 ];
 
 const profileLink = { text: "enter", link: "/profile" };
@@ -72,7 +71,7 @@ const techFront: TechData[] = [
   { tech: "JavaScript", value: 52 },
   { tech: "Jest", value: 20 },
   { tech: "TailwindCSS", value: 34 },
-  { tech: "ReactHook", value: 37},
+  { tech: "ReactHook", value: 37 },
 ];
 
 const techOther: TechData[] = [
