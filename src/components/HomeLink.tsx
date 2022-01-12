@@ -19,12 +19,14 @@ const HomeLink = () => {
             onClick={() => toggleLang("FR")}
             src={FrenchFlag}
             width="20px"
+            alt="frenchFlag"
           />
           <img
             style={{ margin: "0 5px" }}
             onClick={() => toggleLang("EN")}
             src={EnglishFlag}
             width="20px"
+            alt="EnglishFlag"
           />
         </div>
       </div>
