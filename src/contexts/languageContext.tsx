@@ -5,7 +5,7 @@ export const LangContext = createContext("FR") as any;
 const supportedLangs = ["EN", "FR"];
 
 let browserLang = navigator.language.slice(0, 2).toUpperCase();
-console.log(browserLang);
+
 
 if (supportedLangs.indexOf(browserLang) === -1) {
   browserLang = "EN";

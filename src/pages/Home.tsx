@@ -6,7 +6,7 @@ import Button from "../components/Button";
 
 const Home = () => {
   const { lang } = useContext(LangContext);
-  console.log(lang)
+
   return (
     <div className="flex justify-center align-center column height">
       <h1 style={{ fontSize: "3rem" }}>Ludovic Argenty</h1>

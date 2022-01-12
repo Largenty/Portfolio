@@ -12,6 +12,18 @@ import Skills from "./pages/Skills";
 
 function App() {
   const [theme, setTheme] = React.useState<String>("dark");
+  console.log(
+    `%cTiens un curieux :p, comme tu es par ici, si mon portfolio t'a tappé(e) dans l'oeil n'hésite pas à m'envoyer un mail : `,
+    `color: #eeb02a; font-size: 1.2rem;`
+  );
+  console.log(
+    `%clargenty.web@gmail.com`,
+    `color: #ee472a; font-size: 1rem; text-decoration: underline;`
+  );
+  console.log(
+    `%cbonne journée !`,
+    `color: #2a8fee; font-size: 1rem;`
+  );
 
   return (
     <div id="app" style={{ position: "relative" }}>
