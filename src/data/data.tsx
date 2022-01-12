@@ -14,12 +14,12 @@ const btnSkills: BtnLink[] = [
 ];
 
 const btnTheme: ThemeType[] = [
-  { theme: "dark", color: "#343639" },
-  { theme: "red", color: "#ff5a5a" },
-  { theme: "yellow", color: "#ffec88" },
-  { theme: "green", color: "#b0e1a3" },
-  { theme: "blue", color: "#376590" },
   { theme: "white", color: "#fffdf5" },
+  { theme: "yellow", color: "#FDD068" },
+  { theme: "green", color: "#52B788" },
+  { theme: "blue", color: "#376590" },
+  { theme: "red", color: "#ff5a5a" },
+  { theme: "dark", color: "#343639" },
 ];
 
 const lastJobData: WorkingData[] = [
