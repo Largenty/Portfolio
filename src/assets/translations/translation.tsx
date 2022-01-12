@@ -8,7 +8,7 @@ const translations: any = {
 
     profile: {
       titlePart1: "Bonjour, je suis",
-      titlePart2: "un développeur français depuis 2019.",
+      titlePart2: "un développeur depuis 2019.",
       description:
         " Je ne sais pas comment me présenter convenablement mais vous pouvez aller voir mon travail / compétences ou mon linkedIn.",
     },
