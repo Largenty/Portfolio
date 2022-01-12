@@ -1,6 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import { ThemeContext } from "./contexts/themeContext";
+import LanguageContextProvider from "./contexts/languageContext";
 import "./scss/index.scss";
 import Home from "./pages/Home";
 import Profile from "./pages/Profile";
@@ -14,22 +15,18 @@ function App() {
 
   return (
     <div id="app" style={{ position: "relative" }}>
-      <ThemeContext.Provider value={{ theme, setTheme } as any}>
-        <Routes>
-          <Route path="/workspace" element={<Work />} />
-          <Route path="/profile" element={<Profile />} />
-          <Route path="/skills" element={<Skills />} />
-          <Route path="/" element={<Home />} />
-        </Routes>
-        <Theme />
-        <HomeLink />
-        {/* <Side
-          {...{ text: "skills", classSide: "sideRight", link: "/skills" }}
-        />
-        <Side
-          {...{ text: "work", classSide: "sideLeft", link: "/workspace" }}
-        /> */}
-      </ThemeContext.Provider>
+      <LanguageContextProvider>
+        <ThemeContext.Provider value={{ theme, setTheme } as any}>
+          <Routes>
+            <Route path="/workspace" element={<Work />} />
+            <Route path="/profile" element={<Profile />} />
+            <Route path="/skills" element={<Skills />} />
+            <Route path="/" element={<Home />} />
+          </Routes>
+          <Theme />
+          <HomeLink />
+        </ThemeContext.Provider>
+      </LanguageContextProvider>
     </div>
   );
 }

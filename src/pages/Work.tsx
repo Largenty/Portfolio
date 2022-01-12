@@ -1,9 +1,11 @@
-import React from "react";
-import * as data from "../data/data";
+import React, { useContext } from "react";
+import { LangContext } from "../contexts/languageContext";
+import translations from "../assets/translations/translation";
 import { WorkingData } from "../types/types";
 import WorkingCard from "../components/WorkingCard";
 
 const Work = () => {
+  const { lang } = useContext(LangContext);
   return (
     <React.Fragment>
       <div className="flex column  height margin-auto full-width autoMiddle">
@@ -11,10 +13,10 @@ const Work = () => {
           className="backgroundText work-title"
           style={{ marginTop: "150px" }}
         >
-          WORKSPACE
+          {translations[lang].work.title.toUpperCase()}
         </h2>
         <div className="flex justify-space-around wrap margin-side-20">
-          {data.lastJobData.map((element: WorkingData, key: number) => (
+          {translations[lang].lastJobData.map((element: WorkingData, key: number) => (
             <WorkingCard key={key} {...element} />
           ))}
         </div>

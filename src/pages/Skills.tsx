@@ -1,16 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
+import { LangContext } from "../contexts/languageContext";
+import translations from "../assets/translations/translation";
 import * as data from "../data/data";
 import { BtnLink } from "../types/types";
 import Bar from "../components/Bar";
 
 const Skills = () => {
-  const lvlArrayName = [
-    "hello World",
-    "junior",
-    "confirmed",
-    "senior",
-    "master",
-  ];
+  const { lang } = useContext(LangContext);
+
   const lvlArrayNumber: string[] = ["10", "25", "50", "75", "100"];
   const currentWidth = document.body.clientWidth;
 
@@ -26,7 +23,7 @@ const Skills = () => {
       if (skills === "Back-end") {
         setCurrentSkills(data.techBack);
       }
-      if (skills === "other") {
+      if (skills === "other" || skills === "autre") {
         setCurrentSkills(data.techOther);
       }
       setIsLoading(true);
@@ -44,30 +41,34 @@ const Skills = () => {
       <p>Loading...</p>
     </div>
   ) : (
-      <React.Fragment>
-
-      <div className="flex column  width-80 margin-auto height autoMiddle" >
-        <h2 className="skills-title "  style={{ marginTop: "150px" }}>Skills</h2>
+    <React.Fragment>
+      <div className="flex column  width-80 margin-auto height autoMiddle">
+        <h2 className="skills-title " style={{ marginTop: "150px" }}>
+          {translations[lang].skills.title}
+        </h2>
         <div>
           <section className="flex wrap">
-            {data.btnSkills.map((element: BtnLink, key: number) => (
-              <div className="margin-right " key={key}>
-                <button
-                  className="btn mt-2"
-                  onClick={() => handleClick(element.text)}
-                >
-                  {element.text}
-                </button>
-              </div>
-            ))}{" "}
+            {translations[lang].btnSkills.map(
+              (element: BtnLink, key: number) => (
+                <div className="margin-right " key={key}>
+                  <button
+                    className="btn mt-2"
+                    onClick={() => handleClick(element.text)}
+                  >
+                    {element.text}
+                  </button>
+                </div>
+              )
+            )}{" "}
           </section>
 
           <section className="flex wrap justify-space-between margin-top-40   text-transform-capitalize;">
-            {(currentWidth < 560 ? lvlArrayNumber : lvlArrayName).map(
-              (element: string, key: number) => (
-                <p key={key}>{element}</p>
-              )
-            )}
+            {(currentWidth < 560
+              ? lvlArrayNumber
+              : translations[lang].skills.lvlArrayName
+            ).map((element: string, key: number) => (
+              <p key={key}>{element}</p>
+            ))}
           </section>
 
           <section style={{ transition: "all 0.5s" }}>
