@@ -107,6 +107,7 @@ const translations: any = {
       { text: "github", link: "https://github.com/Largenty" },
       { text: "works", link: "/workspace" },
       { text: "skills", link: "/skills" },
+      { text: "small projects", link: "/projects" },
     ],
 
     btnSkills: [{ text: "front-end" }, { text: "Back-end" }, { text: "other" }],
