@@ -21,7 +21,6 @@ const translations: any = {
       title: "Travaux",
     },
 
-
     btnProfile: [
       {
         text: "linkedIn",
@@ -71,10 +70,14 @@ const translations: any = {
         text: "Scroll infini",
         link: "/infiniteScroll",
       },
+      {
+        text: "Colored Lotus",
+        link: "https://fervent-jang-41a1ad.netlify.app/",
+      },
     ],
     infiniteScroll: {
-      search:"Votre recherche"
-    }
+      search: "Votre recherche",
+    },
   },
   EN: {
     homeLink: "Developer Full-stack - HOME",
@@ -97,7 +100,6 @@ const translations: any = {
     work: {
       title: "Works",
     },
-
 
     btnProfile: [
       {
@@ -148,10 +150,14 @@ const translations: any = {
         text: "Infinite scroll",
         link: "/infiniteScroll",
       },
+      {
+        text: "Colored Lotus",
+        link: "https://fervent-jang-41a1ad.netlify.app/",
+      },
     ],
     infiniteScroll: {
-      search:"Votre recherche"
-    }
+      search: "Votre recherche",
+    },
   },
 };
 

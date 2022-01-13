@@ -4,7 +4,9 @@ import { BtnLink } from "../types/types";
 const Button = (props: BtnLink) => {
   const { text, link } = props;
 
-  return text === "linkedIn" || text === "github" ? (
+  return text === "linkedIn" ||
+    text === "github" ||
+    text === "Colored Lotus" ? (
     <a
       href={link}
       target="_blank"
