@@ -15,17 +15,15 @@ const HomeLink = () => {
         </h4>
         <div className="flex" style={{ margin: "0 15px" }}>
           <img
-            style={{ margin: "0 5px" }}
+            style={{ margin: "0 5px", width:"20px" }}
             onClick={() => toggleLang("FR")}
             src={FrenchFlag}
-            width="20px"
             alt="frenchFlag"
           />
           <img
-            style={{ margin: "0 5px" }}
+            style={{ margin: "0 5px", width:"20px" }}
             onClick={() => toggleLang("EN")}
             src={EnglishFlag}
-            width="20px"
             alt="EnglishFlag"
           />
         </div>

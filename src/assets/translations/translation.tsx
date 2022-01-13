@@ -21,6 +21,7 @@ const translations: any = {
       title: "Travaux",
     },
 
+
     btnProfile: [
       {
         text: "linkedIn",
@@ -29,6 +30,7 @@ const translations: any = {
       { text: "github", link: "https://github.com/Largenty" },
       { text: "travaux", link: "/workspace" },
       { text: "compétences", link: "/skills" },
+      { text: "petits projets", link: "/projects" },
     ],
 
     btnSkills: [{ text: "front-end" }, { text: "Back-end" }, { text: "autre" }],
@@ -59,6 +61,20 @@ const translations: any = {
         image: "https://zupimages.net/up/21/51/tay3.png",
       },
     ],
+    projects: { title: "Petits projects" },
+    projectsData: [
+      {
+        text: "slider d'image",
+        link: "/slider",
+      },
+      {
+        text: "Scroll infini",
+        link: "/infiniteScroll",
+      },
+    ],
+    infiniteScroll: {
+      search:"Votre recherche"
+    }
   },
   EN: {
     homeLink: "Developer Full-stack - HOME",
@@ -81,6 +97,7 @@ const translations: any = {
     work: {
       title: "Works",
     },
+
 
     btnProfile: [
       {
@@ -120,6 +137,20 @@ const translations: any = {
         image: "https://zupimages.net/up/21/51/tay3.png",
       },
     ],
+    projects: { title: "Small projects" },
+    projectsData: [
+      {
+        text: "Img Slider",
+        link: "/slider",
+      },
+      {
+        text: "Infinite scroll",
+        link: "/infiniteScroll",
+      },
+    ],
+    infiniteScroll: {
+      search:"Votre recherche"
+    }
   },
 };
 

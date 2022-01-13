@@ -9,6 +9,10 @@ import Theme from "./components/Theme";
 import Work from "./pages/Work";
 import HomeLink from "./components/HomeLink";
 import Skills from "./pages/Skills";
+import Project from "./pages/Projects";
+import Slider from "./projects/Slider/Slider";
+import InfiniteScroll from "./projects/InfiniteScroll/infiniteScroll";
+
 
 function App() {
   const [theme, setTheme] = React.useState<String>("dark");
@@ -33,6 +37,9 @@ function App() {
             <Route path="/workspace" element={<Work />} />
             <Route path="/profile" element={<Profile />} />
             <Route path="/skills" element={<Skills />} />
+            <Route path="/projects" element={<Project />} />
+            <Route path="/slider" element={<Slider />} />
+            <Route path="/infiniteScroll" element={<InfiniteScroll />} />
             <Route path="/" element={<Home />} />
           </Routes>
           <Theme />

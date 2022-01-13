@@ -15,7 +15,14 @@ export type WorkingData = {
     link: string;
     image: string;
 };
-  
+
+export type ProjectData = {
+    description: string;
+    tech: string;
+    link: string;
+    image: string;
+};
+
 export type ThemeType = {
     theme: string;
     color: string;
